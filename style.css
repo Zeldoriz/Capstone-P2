@@ -18,7 +18,9 @@ body {
 }
 
 a,
+p,
 h1,
+h2,
 span {
     font-family: 'Montserrat',
         sans-serif;
@@ -52,9 +54,28 @@ a {
     margin-right: 200px !important;
 }
 
+#about {
+    margin-top: 200px;
+}
+
+.overlay {
+    width: 1%;
+    height: 30%;
+    background-color: #0075F6;
+    z-index: -1;
+    position: absolute;
+    display: block;
+    margin-top: 60px;
+    margin-left: -60px;
+}
+
 @media(min-width:767px) {
     #navbar-items {
         gap: 75px;
+    }
+
+    #abouttext{
+        padding-left: 30px;
     }
 }
 
@@ -66,7 +87,12 @@ a {
 
     #bg-shape::after {
         width: 350px;
+    }
+}
 
+@media (max-width:992px) {
+    #navbar {
+        background-color: black;
     }
 }
 
@@ -74,10 +100,6 @@ a {
     .navbar {
         margin-left: 50px !important;
         margin-right: 50px !important;
-    }
-
-    #navbar {
-        background-color: black;
     }
 
     #menubuttontext {
@@ -104,5 +126,14 @@ a {
 
     #hero img {
         width: 250px !important;
+    }
+
+    #about{
+        margin: 100px 50px;
+        
+    }
+
+    #abouttext {
+        text-align: center;
     }
 }
