@@ -60,7 +60,7 @@ a {
 
 .overlay {
     width: 1%;
-    height: 30%;
+    height: 250px;
     background-color: #0075F6;
     z-index: -1;
     position: absolute;
@@ -69,12 +69,12 @@ a {
     margin-left: -60px;
 }
 
-@media(min-width:767px) {
+@media(min-width:993px) {
     #navbar-items {
         gap: 75px;
     }
 
-    #abouttext {
+    #abouttext{
         padding-left: 30px;
     }
 }
@@ -128,9 +128,9 @@ a {
         width: 250px !important;
     }
 
-    #about {
+    #about{
         margin: 100px 50px;
-
+        
     }
 
     #abouttext {
