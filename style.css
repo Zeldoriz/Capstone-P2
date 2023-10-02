@@ -54,7 +54,8 @@ a {
     margin-right: 200px !important;
 }
 
-#about {
+#about,
+#skills {
     margin-top: 200px;
 }
 
@@ -69,17 +70,65 @@ a {
     margin-left: -60px;
 }
 
+#skills p,
+#skills h1 {
+    text-align: center;
+}
+
+.skillcards {
+    background-color: #FFFAFF;
+    width: 300px;
+    height: 300px;
+}
+
+.skillcards b {
+    position: relative;
+}
+
+.skillcards b::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: #000000;
+    margin: 0 auto;
+}
+
+.skillcards #learning::after {
+    top: 28px;
+    right: 18px;
+}
+
+.skillcards #codingin::after {
+    top: 28px;
+    right: 23px;
+}
+
+.skillcards #exploring::after {
+    top: 28px;
+    right: 21px;
+}
+
+.skillcards li {
+    text-align: center;
+    padding: 3px 0px;
+}
+
 @media(min-width:993px) {
     #navbar-items {
         gap: 75px;
     }
 
-    #abouttext{
+    #abouttext {
         padding-left: 30px;
     }
 
-    #about{
+    #about {
         padding: 0px 50px !important;
+    }
+
+    #hero {
+        margin-top: 75px;
     }
 }
 
@@ -132,12 +181,16 @@ a {
         width: 250px !important;
     }
 
-    #about{
+    #about {
         margin: 100px 50px;
-        
+
     }
 
     #abouttext {
+        text-align: justify;
+    }
+
+    #abouth1 {
         text-align: center;
     }
 }
