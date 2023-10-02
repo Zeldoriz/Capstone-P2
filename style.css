@@ -127,7 +127,7 @@ a {
         padding: 0px 50px !important;
     }
 
-    #abouth1{
+    #abouth1 {
         padding-left: 30px;
     }
 
@@ -151,6 +151,10 @@ a {
     #navbar {
         background-color: black;
     }
+
+    #navbar-items a {
+        font-size: 12pt !important;
+    }
 }
 
 @media (max-width:767px) {
@@ -162,10 +166,6 @@ a {
     #menubuttontext {
         padding-left: 5px;
         font-size: smaller;
-    }
-
-    #navbar-items a {
-        font-size: 12pt !important;
     }
 
     #bg-shape::after {
