@@ -1,0 +1,4 @@
+#303036 Gray
+#0075F6 Dark Blue
+#77B7FF Light Blue
+#FFFAFF Ghost White
