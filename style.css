@@ -43,7 +43,7 @@ a {
 
 #scrollnavbar {
     position: fixed;
-    top: -100px;
+    top: -200px;
     transition: all 0.25s ease-in-out;
     background-color: #000000;
     width: 100%;
