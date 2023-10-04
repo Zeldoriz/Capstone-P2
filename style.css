@@ -9,23 +9,12 @@ body {
 }
 
 
-#bg-shape {
+#bg {
     position: relative;
     background-image: url(Assets/Images/herobg1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-}
-
-#bg-shape:after {
-    content: '';
-    position: absolute;
-    width: 450px;
-    height: 450px;
-    background: #77B7FF;
-    top: 0;
-    right: 50px;
-    z-index: -1;
 }
 
 a,
@@ -239,10 +228,6 @@ a {
         margin-left: 100px !important;
         margin-right: 100px !important;
     }
-
-    #bg-shape::after {
-        width: 350px;
-    }
 }
 
 @media (max-width:992px) {
@@ -304,11 +289,6 @@ a {
 
     #menubuttontext {
         font-size: smaller;
-    }
-
-    #bg-shape::after {
-        width: 250px;
-        right: 0;
     }
 
     #hero {
