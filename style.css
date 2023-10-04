@@ -68,7 +68,8 @@ a {
 }
 
 #about,
-#skills {
+#skills,
+#footer {
     margin-top: 200px;
 }
 
@@ -129,11 +130,9 @@ a {
 }
 
 #myBtn {
-    display: none;
-    /* Hidden by default */
     position: fixed;
     /* Fixed/sticky position */
-    bottom: 10px;
+    bottom: -50px;
     /* Place the button at the bottom of the page */
     right: 10px;
     /* Place the button 30px from the right */
@@ -155,6 +154,7 @@ a {
     /* Increase font size */
     height: 40px;
     width: 40px;
+    transition: all 0.25s ease-in-out;
 }
 
 #myBtn:hover {

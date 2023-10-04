@@ -159,7 +159,7 @@
 
     <!-- Skills section -->
     <section id="skills">
-        <div class="container my-5 col-10">
+        <div class="container mt-5 col-10">
             <div class="row justify-content-center align-items-center">
                 <div class="col-12" style="color: #FFFAFF;">
                     <p style="font-size: 16pt;">THINGS I DO</p>
@@ -241,11 +241,14 @@
         </div>
     </section>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-            height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up"
+            viewBox="0 0 16 16">
             <path fill-rule="evenodd"
                 d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z" />
-        </svg></button>
+        </svg>
+    </button>
+
 
     <!-- Footer Section -->
     <section id="footer">
@@ -288,12 +291,12 @@
         };
 
         function scrollFunction() {
-            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
                 document.getElementById("scrollnavbar").style.top = "0";
-                mybutton.style.display = "block";
+                mybutton.style.bottom = "10px"
             } else {
                 document.getElementById("scrollnavbar").style.top = "-100px";
-                mybutton.style.display = "none";
+                mybutton.style.bottom = "-50px";
             }
         }
 
