@@ -241,7 +241,7 @@ a {
     }
 
     #bg {
-        height: 600px;
+        height: 700px !important;
     }
 
     #about,
