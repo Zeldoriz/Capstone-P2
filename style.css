@@ -2,8 +2,19 @@ body {
     background-color: #303036;
 }
 
+#about,
+#skills,
+#footer {
+    margin-top: 200px;
+}
+
+
 #bg-shape {
     position: relative;
+    background-image: url(Assets/Images/herobg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 #bg-shape:after {
@@ -34,13 +45,6 @@ a {
     font-size: 16pt !important;
 }
 
-#hero>div>div {
-    background-image: url(Assets/Images/codebg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
 #scrollnavbar {
     position: fixed;
     top: -200px;
@@ -52,10 +56,59 @@ a {
 
 #navbar-items a {
     color: #FFFAFF !important;
+    text-decoration: none;
 }
 
 #navbar-items a:hover {
-    text-decoration: underline;
+    color: #FFFAFF !important;
+}
+
+#navbar-items li {
+    position: relative;
+}
+
+#nav-home::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 2px;
+    top: 40px;
+    left: 9px;
+    background-color: #FFFAFF;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#nav-about::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 2px;
+    top: 40px;
+    left: 9px;
+    background-color: #FFFAFF;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#nav-skills::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 43px;
+    height: 2px;
+    top: 40px;
+    left: 9px;
+    background-color: #FFFAFF;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+
+#navbar-items li:hover::before {
+    transform: scaleX(1);
 }
 
 .navbar {
@@ -65,12 +118,7 @@ a {
 
 #menubuttontext {
     padding-left: 5px;
-}
-
-#about,
-#skills,
-#footer {
-    margin-top: 200px;
+    color: #FFFAFF;
 }
 
 .overlay {
@@ -220,6 +268,31 @@ a {
 
     #logo104 {
         height: 30px;
+    }
+
+    #nav-home::before {
+        width: 48px;
+        height: 1px;
+        top: 30px;
+        left: 0px;
+    }
+
+    #nav-about::before {
+        width: 48px;
+        height: 1px;
+        top: 30px;
+        left: 0px;
+    }
+
+    #nav-skills::before {
+        width: 35px;
+        height: 1px;
+        top: 30px;
+        left: 0px;
+    }
+
+    #navbar-items li:hover::before {
+        transform: scaleX(1);
     }
 }
 
