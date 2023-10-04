@@ -126,6 +126,7 @@ a {
     text-align: center;
 }
 
+
 .skillcards {
     background-color: #FFFAFF;
     width: 300px;
@@ -237,6 +238,16 @@ a {
 
     #navbar-items a {
         font-size: 12pt !important;
+    }
+
+    #bg {
+        height: 600px;
+    }
+
+    #about,
+    #skills,
+    #footer {
+        margin-top: 150px;
     }
 
     #githublogo {
