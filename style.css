@@ -1,0 +1,318 @@
+body {
+    background-color: #303036;
+}
+
+#about,
+#skills,
+#footer {
+    margin-top: 300px;
+}
+
+
+#bg {
+    position: relative;
+    background-image: url(Assets/Images/herobg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+a,
+p,
+h1,
+h2,
+span {
+    font-family: 'Montserrat',
+        sans-serif;
+    font-family: 'Nanum Pen Script',
+        cursive;
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+a {
+    font-size: 16pt !important;
+}
+
+#scrollnavbar {
+    position: fixed;
+    top: -200px;
+    transition: all 0.25s ease-in-out;
+    background-color: #000000;
+    width: 100%;
+    z-index: 999;
+}
+
+#navbar-items a {
+    color: #FFFAFF !important;
+    text-decoration: none;
+}
+
+#navbar-items a:hover {
+    color: #FFFAFF !important;
+}
+
+#navbar-items li {
+    position: relative;
+}
+
+#nav-home::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 2px;
+    top: 40px;
+    left: 9px;
+    background-color: #FFFAFF;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#nav-about::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 2px;
+    top: 40px;
+    left: 9px;
+    background-color: #FFFAFF;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#nav-skills::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 43px;
+    height: 2px;
+    top: 40px;
+    left: 9px;
+    background-color: #FFFAFF;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+
+#navbar-items li:hover::before {
+    transform: scaleX(1);
+}
+
+.navbar {
+    margin-left: 200px !important;
+    margin-right: 200px !important;
+}
+
+#menubuttontext {
+    padding-left: 5px;
+    color: #FFFAFF;
+}
+
+.overlay {
+    width: 1%;
+    height: 250px;
+    background-color: #0075F6;
+    z-index: -1;
+    position: absolute;
+    display: block;
+    margin-top: 60px;
+    margin-left: -60px;
+}
+
+#skills p,
+#skills h1 {
+    text-align: center;
+}
+
+.skillcards {
+    background-color: #FFFAFF;
+    width: 300px;
+    height: 300px;
+}
+
+.skillcards b {
+    position: relative;
+    font-weight: bolder;
+}
+
+.skillcards b::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: #000000;
+    margin: 0 auto;
+}
+
+.skillcards #learning::after {
+    top: 28px;
+    right: 18px;
+}
+
+.skillcards #creatingin::after {
+    top: 28px;
+    right: 29px;
+}
+
+.skillcards #exploring::after {
+    top: 28px;
+    right: 20px;
+}
+
+.skillcards li {
+    text-align: center;
+    padding: 3px 0px;
+}
+
+#myBtn {
+    position: fixed;
+    bottom: -50px;
+    right: 10px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #77B7FF;
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
+    height: 40px;
+    width: 40px;
+    transition: all 0.25s ease-in-out;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+#footer {
+    background-color: #0075F6;
+}
+
+#footer p {
+    color: #FFFAFF !important;
+}
+
+#footer li a {
+    font-weight: 500;
+    font-size: 14pt !important;
+    color: #FFFAFF !important;
+}
+
+@media(min-width:993px) {
+    #navbar-items {
+        gap: 75px;
+    }
+
+    #abouttext {
+        padding-left: 30px;
+    }
+
+    #about {
+        padding: 0px 50px !important;
+    }
+
+    #abouth1 {
+        padding-left: 30px;
+    }
+
+    #hero {
+        margin-top: 75px;
+    }
+}
+
+@media (max-width:1080px) and (min-width:768px) {
+    .navbar {
+        margin-left: 100px !important;
+        margin-right: 100px !important;
+    }
+}
+
+@media (max-width:992px) {
+    #navbar {
+        background-color: black;
+    }
+
+    #navbar-items a {
+        font-size: 12pt !important;
+    }
+
+    #githublogo {
+        height: 40px;
+    }
+
+    #linkedinlogo {
+        height: 35px;
+    }
+
+    #hackerranklogo {
+        height: 40px;
+    }
+
+    #logo104 {
+        height: 30px;
+    }
+
+    #nav-home::before {
+        width: 48px;
+        height: 1px;
+        top: 30px;
+        left: 0px;
+    }
+
+    #nav-about::before {
+        width: 48px;
+        height: 1px;
+        top: 30px;
+        left: 0px;
+    }
+
+    #nav-skills::before {
+        width: 35px;
+        height: 1px;
+        top: 30px;
+        left: 0px;
+    }
+
+    #navbar-items li:hover::before {
+        transform: scaleX(1);
+    }
+}
+
+@media (max-width:767px) {
+    .navbar {
+        margin-left: 50px !important;
+        margin-right: 50px !important;
+    }
+
+    #menubuttontext {
+        font-size: smaller;
+    }
+
+    #hero {
+        margin: 0 50px;
+    }
+
+    #hero h1 {
+        text-align: center;
+    }
+
+    #hero img {
+        width: 250px !important;
+    }
+
+    #about {
+        margin: 100px 50px;
+
+    }
+
+    #abouttext {
+        text-align: justify;
+    }
+
+    #abouth1 {
+        text-align: center;
+    }
+}
