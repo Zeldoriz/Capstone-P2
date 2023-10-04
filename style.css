@@ -232,8 +232,14 @@ a {
 }
 
 @media (max-width:992px) {
+    body {
+        margin-top: -48px;
+    }
+
     #navbar {
         background-color: black;
+        position: absolute;
+        width: 100%;
     }
 
     #navbar-items a {
@@ -241,7 +247,7 @@ a {
     }
 
     #bg {
-        height: 700px !important;
+        height: 500px !important;
     }
 
     #about,
