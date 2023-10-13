@@ -1,11 +1,11 @@
 body {
-    background-color: #303036;
+    background-color: #FFFAFF;
 }
 
+
 #about,
-#skills,
-#footer {
-    margin-top: 300px;
+#skills {
+    height: 100vh;
 }
 
 
@@ -111,14 +111,12 @@ a {
 }
 
 .overlay {
-    width: 1%;
+    width: 50px;
     height: 250px;
     background-color: #0075F6;
     z-index: -1;
     position: absolute;
-    display: block;
-    margin-top: 60px;
-    margin-left: -60px;
+    margin-top: 75px;
 }
 
 #skills p,
@@ -250,12 +248,6 @@ a {
         height: 500px !important;
     }
 
-    #about,
-    #skills,
-    #footer {
-        margin-top: 150px;
-    }
-
     #githublogo {
         height: 40px;
     }
@@ -296,6 +288,10 @@ a {
     #navbar-items li:hover::before {
         transform: scaleX(1);
     }
+
+    .overlay {
+        height: 200px;
+    }
 }
 
 @media (max-width:767px) {
@@ -331,5 +327,9 @@ a {
 
     #abouth1 {
         text-align: center;
+    }
+
+    #footer {
+        margin-top: 500px;
     }
 }
