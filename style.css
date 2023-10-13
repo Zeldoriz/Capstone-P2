@@ -37,7 +37,7 @@ a {
 #scrollnavbar {
     position: fixed;
     top: -200px;
-    transition: all 0.25s ease-in-out;
+    transition: all 0.4s ease-in-out;
     background-color: #000000;
     width: 100%;
     z-index: 999;
@@ -60,10 +60,10 @@ a {
     content: "";
     position: absolute;
     display: block;
-    width: 60px;
+    width: 65px;
     height: 2px;
     top: 40px;
-    left: 9px;
+    left: 7px;
     background-color: #FFFAFF;
     transform: scaleX(0);
     transition: transform 0.3s ease;
@@ -73,10 +73,10 @@ a {
     content: "";
     position: absolute;
     display: block;
-    width: 60px;
+    width: 65px;
     height: 2px;
     top: 40px;
-    left: 9px;
+    left: 7px;
     background-color: #FFFAFF;
     transform: scaleX(0);
     transition: transform 0.3s ease;
@@ -86,10 +86,10 @@ a {
     content: "";
     position: absolute;
     display: block;
-    width: 43px;
+    width: 47px;
     height: 2px;
     top: 40px;
-    left: 9px;
+    left: 8px;
     background-color: #FFFAFF;
     transform: scaleX(0);
     transition: transform 0.3s ease;
@@ -181,7 +181,7 @@ a {
     font-size: 18px;
     height: 40px;
     width: 40px;
-    transition: all 0.25s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 #myBtn:hover {
