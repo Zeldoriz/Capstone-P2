@@ -2,7 +2,6 @@ body {
     background-color: #FFFAFF;
 }
 
-
 #about,
 #skills {
     height: 100vh;
@@ -292,6 +291,15 @@ a {
     .overlay {
         height: 200px;
     }
+
+    #about,
+    #skills {
+        height: 75vh;
+    }
+
+    #footer {
+        margin-top: 600px;
+    }
 }
 
 @media (max-width:767px) {
@@ -327,9 +335,5 @@ a {
 
     #abouth1 {
         text-align: center;
-    }
-
-    #footer {
-        margin-top: 500px;
     }
 }
