@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Nanum+Pen+Script&family=Poppins:wght@200&display=swap"
         rel="stylesheet">
+    <script defer src="app.js"></script>
 </head>
 
 <body>
@@ -107,7 +108,7 @@
                         <div class="overlay"></div>
                     </div>
                 </div>
-                <div class="col-md-6 col-12 pt-lg-5 px-sm-4">
+                <div class="col-md-6 col-12 pt-lg-5 px-sm-4 JShidden hidden-About">
                     <div class="row px-md-0">
                         <div class="d-none"></div>
                         <span style="color: black;">
@@ -161,14 +162,14 @@
     <section id="skills" class="row align-items-center">
         <div class="container mt-5 col-10">
             <div class="row justify-content-center align-items-center">
-                <div class="col-12" style="color: black;">
+                <div class="col-12" style="color: black; ">
                     <p style="font-size: 16pt;">THINGS I DO</p>
                     <h1><b>Compile, execute, and a bit of luck</b></h1>
                 </div>
             </div>
 
             <div class="row py-md-5 py-4 g-5">
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-md-4 JShidden hidden-SkillcardL">
                     <div class="row justify-content-center">
                         <div class="skillcards">
                             <div class="row py-4">
@@ -191,7 +192,7 @@
 
                 </div>
 
-                <div class=" col-12 col-lg-4">
+                <div class=" col-12 col-md-4 JShidden hidden-SkillcardM">
                     <div class="row justify-content-center">
                         <div class="skillcards">
                             <div class="row py-4">
@@ -215,7 +216,7 @@
 
                 </div>
 
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-md-4 JShidden hidden-SkillcardR">
                     <div class="row justify-content-center">
                         <div class="skillcards">
                             <div class="row py-4">
@@ -287,29 +288,6 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
 
-    <script>
-        window.onscroll = function () {
-            scrollFunction()
-            scrollFunctionBtn()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-                document.getElementById("scrollnavbar").style.top = "0";
-                mybutton.style.bottom = "10px"
-            } else {
-                document.getElementById("scrollnavbar").style.top = "-200px";
-                mybutton.style.bottom = "-50px";
-            }
-        }
-
-        let mybutton = document.getElementById("myBtn");
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
 </body>
 
 </html>
