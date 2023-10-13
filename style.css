@@ -14,6 +14,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    padding-bottom: 550px;
 }
 
 a,
@@ -325,8 +326,7 @@ a {
     }
 
     #about {
-        margin: 100px 50px;
-
+        margin: 200px 50px;
     }
 
     #abouttext {
