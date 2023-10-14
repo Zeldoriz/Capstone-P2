@@ -1,2 +1,2 @@
 # Capstone-P2
-Personal Website
+Personal Website made with HTML, CSS and JS
