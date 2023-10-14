@@ -1,2 +1,2 @@
 # Capstone-P2
-Personal Website made with HTML, CSS and JS
+Hey there, here's my personal website made with HTML, CSS and JS
